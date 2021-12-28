@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "DnsmasqSyslog",
+  "fields": [
+    { "name": "log_time", "type": "long" },
+    { "name": "dnsmasq_server", "type": "string" },
+    { "name": "log_display_id", "type": "long" },
+    { "name": "client_ip", "type": "string" },
+    { "name": "client_port", "type": "int" },
+    { "name": "query_type", "type": "string", "doc": "A, AAAA, PTR" },
+    { "name": "question", "type": "string" },
+    { "name": "server_ip", "type": "string" },
+    { "name": "response_code", "type": "string", "doc": "NXDOMAIN, SERVERFAIL, NOTIMP" },
+    { "name": "answer_type", "type": "string", "doc": "A, CNAME" },
+    { "name": "answer", "type": "string" }
+  ]
+}
